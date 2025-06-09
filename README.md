@@ -1,4 +1,4 @@
-![Intro Image](images/intro_image.png)
+![Intro Image](images/pcd_image.png)
 
 # PCD to Geo-Referenced PCD Converter
 
