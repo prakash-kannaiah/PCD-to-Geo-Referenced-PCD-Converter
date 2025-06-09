@@ -19,11 +19,13 @@ It does not require GNSS/IMU integration — only a .pcd file and basic GPS info
 
 ## 📁 Project Structure
 
+```
 ├── main.py                 # Main Python script for PCD transformation
 ├── README.md               # This documentation file
 ├── requirements.txt        # Python dependencies
 ├── pointcloud_map.pcd      # Input point cloud file (user-provided)
 └── output_transformed.pcd  # Output geo-referenced point cloud
+```
 
 ---
 
