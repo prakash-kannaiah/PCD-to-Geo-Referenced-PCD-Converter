@@ -95,6 +95,10 @@ python main.py
 
 ### Step 4: View and Save Output
 
+Here is an example visualization of the transformed point cloud:
+
+![Transformed Point Cloud](images/o3d_visualizer.png)
+
 - A 3D viewer will appear to show the transformed point cloud.
 - To close the viewer and terminate the program, press **q** in the viewer window.
 - A new file will be saved as:
