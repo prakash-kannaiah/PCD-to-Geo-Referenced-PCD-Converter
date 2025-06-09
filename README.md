@@ -3,10 +3,10 @@
 
 This tool converts a local LiDAR point cloud (.pcd file) into a geo-referenced point cloud using:
 
-- A known GPS starting position (latitude, longitude, altitude)
+- A known GPS starting and stopping position (latitude, longitude, altitude)
 - A heading angle (rotation in degrees)
 
-It does not require GNSS/IMU integration — just a .pcd file and basic GPS info.
+It does not require GNSS/IMU integration — just a .pcd file and basic GPS info. The program applies rotation and translation to align the point cloud with real-world geographic coordinates.
 
 ---
 
@@ -83,6 +83,7 @@ python main.py
 ### Step 4: View and Save Output
 
 - A 3D viewer will appear to show the transformed point cloud.
+- To close the viewer and terminate the program, press **q** in the viewer window.
 - A new file will be saved as:
 
   output_transformed.pcd
