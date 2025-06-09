@@ -1,33 +1,109 @@
+
 # PCD to Geo-Referenced PCD Converter
 
-This tool converts a **local LiDAR point cloud (PCD file)** into a **geo-referenced point cloud** using:
-- A known GPS starting position (latitude, longitude, altitude)
-- A heading angle (in degrees)
+This tool converts a local LiDAR point cloud (.pcd file) into a geo-referenced point cloud using:
 
-It only uses LiDAR and two GPS positions (start and stop) to anchor the point cloud globally.
+- A known GPS starting position (latitude, longitude, altitude)
+- A heading angle (rotation in degrees)
+
+It does not require GNSS/IMU integration — just a .pcd file and basic GPS info.
 
 ---
 
 ## 🧭 How It Works
 
-1. **Rotation**: The point cloud is rotated around the Z-axis using the heading (yaw) angle to match the global orientation.
-2. **Translation**: The point cloud is then translated to the given GPS starting location.
+1. Rotation: Rotates the point cloud around the Z-axis based on the heading angle.
+2. Translation: Translates the rotated point cloud to the given GPS start location.
 
 ---
 
-## 📁 Input
+## 📂 Input
 
-- `pointcloud_map.pcd`: Raw local PCD file.
+- pointcloud_map.pcd : Local (non-referenced) point cloud file
+
+---
 
 ## 📄 Output
 
-- `output_transformed.pcd`: Transformed, geo-referenced PCD file.
+- output_transformed.pcd : Geo-referenced PCD file after transformation
 
 ---
 
 ## 🔧 Requirements
 
-Install dependencies using:
+Python 3.8 or higher.
 
-```bash
+Install required libraries with:
+
+```
 pip install -r requirements.txt
+```
+
+Dependencies:
+- open3d
+- numpy
+
+---
+
+## ▶️ Run the Program
+
+### Step 1: Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+
+---
+
+### Step 2: Prepare Your Input File
+
+- Make sure your point cloud file is named:
+  pointcloud_map.pcd
+- Place it in the same directory as main.py.
+
+- Open main.py and update these values if needed:
+
+```
+tx = 42055.5884  # GPS latitude
+ty = 41385.663   # GPS longitude
+tz = 0           # GPS altitude
+rz = -121.7      # Heading angle in degrees
+```
+
+---
+
+### Step 3: Run the Script
+
+```
+python main.py
+```
+
+---
+
+### Step 4: View and Save Output
+
+- A 3D viewer will appear to show the transformed point cloud.
+- A new file will be saved as:
+
+  output_transformed.pcd
+
+- Terminal output:
+
+  Transformed point cloud saved as 'output_transformed.pcd'.
+
+---
+
+## 💡 Use Cases
+
+- Outdoor LiDAR mapping
+- GIS-ready transformation of point clouds
+- Field robotics and AV research
+- Preprocessing for SLAM or localization pipelines
+
+---
+
+## 👨‍💻 Author
+
+Prakash Kannaiah  
+LinkedIn: https://www.linkedin.com/in/prakash-kannaiah
+
