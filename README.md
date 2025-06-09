@@ -1,12 +1,12 @@
 
 # PCD to Geo-Referenced PCD Converter
 
-This tool converts a local LiDAR point cloud (.pcd file) into a geo-referenced point cloud using:
+This program converts a local LiDAR point cloud (.pcd file) into a geo-referenced point cloud using:
 
 - A known GPS starting and stopping position (latitude, longitude, altitude)
 - A heading angle (rotation in degrees)
 
-It does not require GNSS/IMU integration — just a .pcd file and basic GPS info. The program applies rotation and translation to align the point cloud with real-world geographic coordinates.
+It does not require GNSS/IMU integration — only a .pcd file and basic GPS information. The program applies rotation and translation to align the point cloud with real-world geographic coordinates.
 
 ---
 
