@@ -74,15 +74,33 @@ pip install -r requirements.txt
   pointcloud_map.pcd
 - Place it in the same directory as main.py.
 
-- Open main.py and update these values if needed:
+a. **Convert Latitude & Longitude**
 
-```
-tx = 42055.5884  # GPS latitude
-ty = 41385.663   # GPS longitude
-tz = 0           # GPS altitude
-rz = -121.7      # Heading angle in degrees
-```
+- If your GPS coordinates are in **degree, minutes, seconds (DMS)** format, convert them to **decimal degrees** using this formula:
 
+  ```
+  Decimal Degrees = Degrees + (Minutes / 60) + (Seconds / 3600)
+  ```
+
+  Example:  
+  `17°32'33.8530"N` → `17 + 32/60 + 33.8530/3600 = 17.54273694`N
+
+b. **Calculate the Heading Angle (Rotation)**
+
+- Find the angle between the initial point and final point of the path using their lat/lon (or x/y) positions.
+- This angle is used to rotate the local map to match geographic orientation.
+- The heading is in degrees and will be used as the `rz` value in the program.
+
+![Intro Image](images/angle_calculation.png)
+
+Update the following values in `main.py`:
+
+```python
+tx = <decimal_latitude>
+ty = <decimal_longitude>
+tz = <altitude>
+rz = <heading_angle_in_degrees>
+```
 ---
 
 ### Step 3: Run the Script
