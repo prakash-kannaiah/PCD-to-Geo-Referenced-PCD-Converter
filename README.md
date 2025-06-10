@@ -89,7 +89,7 @@ b. **Calculate the Heading Angle (Rotation)**
 
 - Find the angle between the initial point and final point of the path using their lat/lon (or x/y) positions.
 - This angle is used to rotate the local map to match geographic orientation.
-- The heading is in degrees and will be used as the `rz` value in the program.
+- The heading is in `θ` degrees and will be used as the `rz` value in the program.
 
 ![Intro Image](images/angle_calculation.png)
 
