@@ -137,8 +137,8 @@ c. **Calculate the Heading Angle (Rotation)**
 Update the following values in `main.py`:
 
 ```python
-tx = <decimal_latitude>
-ty = <decimal_longitude>
+tx = <decimal_latitude in MGRS>
+ty = <decimal_longitude in MGRS>
 tz = <altitude>
 rz = <drifted_angle_in_degrees>
 ```
