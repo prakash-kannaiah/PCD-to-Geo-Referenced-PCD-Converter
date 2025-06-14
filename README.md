@@ -104,7 +104,7 @@ a. **Convert Latitude & Longitude**
   Example:  
   `17°32'33.8530"N` → `17 + 32/60 + 33.8530/3600 = 17.54273694`N
 
-  - use the program if required to dms to degree using the program `dms_to_decimal.py`
+- If needed, use the  `dms_to_decimal.py` program to convert DMS to decimal degrees automatically.
 
 b. **Calculate the Heading Angle (Rotation)**
 
