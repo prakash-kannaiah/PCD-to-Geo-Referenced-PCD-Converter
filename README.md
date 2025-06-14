@@ -122,7 +122,7 @@ Update the following values in `main.py`:
 tx = <decimal_latitude>
 ty = <decimal_longitude>
 tz = <altitude>
-rz = <heading_angle_in_degrees>
+rz = <drifted_angle_in_degrees>
 ```
 ---
 
