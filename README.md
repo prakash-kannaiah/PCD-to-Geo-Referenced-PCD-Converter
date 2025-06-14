@@ -104,6 +104,8 @@ a. **Convert Latitude & Longitude**
   Example:  
   `17°32'33.8530"N` → `17 + 32/60 + 33.8530/3600 = 17.54273694`N
 
+  - use the program if required to dms to degree using the program `dms_to_decimal.py`
+
 b. **Calculate the Heading Angle (Rotation)**
 
 - Find the angle between the initial point and final point of the path using their lat/lon (or x/y) positions.
