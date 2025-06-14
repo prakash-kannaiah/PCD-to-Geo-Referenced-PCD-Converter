@@ -30,6 +30,25 @@ It does not require GNSS/IMU integration — only a .pcd file and basic GPS info
 
 ---
 
+## 📂 Dataset
+
+The input point cloud file (`pointcloud_map.pcd`) is available on Google Drive.
+
+👉 [Click here to download the dataset](https://drive.google.com/drive/folders/1tbdMGSBHHX3wy8MN74vPKHXFNwjxcOey?usp=sharing)
+
+After downloading, place the pcd file it in the root folder of this project:
+
+```
+your-project/
+├── main.py
+├── pointcloud_map.pcd <-- Place it here
+└── ...
+```
+
+The program expects this file to exist in the current working directory.
+
+---
+
 ## 📂 Input
 
 - pointcloud_map.pcd : Local (non-referenced) point cloud file
