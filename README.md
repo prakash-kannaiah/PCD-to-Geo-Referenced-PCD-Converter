@@ -55,7 +55,7 @@ The program expects this file to exist in the current working directory.
 - tx (or) x1 (or) x3 -> Latitude - Initial Pose (GPS)
 - ty (or) y1 (or) y3 -> Longitude - Initial Pose (GPS)
 - tz -> altitude - Initial Pose (GPS) (here, used as 0)
-- rz (or) 0 - Degrees (Drifted angle)
+- rz (or) `0` - Degrees (Drifted angle)
 
 ---
 
