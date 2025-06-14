@@ -124,6 +124,9 @@ c. **Calculate the Heading Angle (Rotation)**
 ![Intro Image](images/angle_calculation.png)
 
 - Use the program  `calculate_angle.py` to compute the angle θ (i.e., rz) based on the given coordinates.
+- Use the Tier-IV Vector Map Builder (open source) or any pcd interactive viewer to find the x3,y3.
+
+  [Tier-IV Vector Map Builder].(https://tools.tier4.jp/vector_map_builder_ll2/)
 
 Update the following values in `main.py`:
 
