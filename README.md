@@ -130,8 +130,6 @@ c. **Calculate the Heading Angle (Rotation)**
 
 ### ▶️ Video Tutorials
 
-- PCD Converter with GPS: [Video Link](link)
-
 - PCD Converter with MGRS for Autoware: [Video Link](link)
 
 ---
