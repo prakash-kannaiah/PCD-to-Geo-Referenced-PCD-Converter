@@ -52,6 +52,9 @@ The program expects this file to exist in the current working directory.
 ## 📂 Input
 
 - pointcloud_map.pcd : Local (non-referenced) point cloud file
+- tx (or) x1 (or) x3 -> Latitude - Initial Pose (GPS)
+- ty (or) y1 (or) y3 -> Longitude - Initial Pose (GPS)
+- tz -> altitude - Initial Pose (GPS) (here, used as 0)
 
 ---
 
