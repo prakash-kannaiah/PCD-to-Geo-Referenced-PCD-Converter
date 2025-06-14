@@ -170,7 +170,7 @@ Here is an example visualization of the transformed point cloud:
 
 ---
 
-## 👨‍💻 Author
+## ✍️ Author
 
 Prakash Kannaiah  
 LinkedIn: https://www.linkedin.com/in/prakash-kannaiah
