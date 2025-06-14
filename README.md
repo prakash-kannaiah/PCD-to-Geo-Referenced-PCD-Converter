@@ -114,6 +114,8 @@ b. **Calculate the Heading Angle (Rotation)**
 
 ![Intro Image](images/angle_calculation.png)
 
+- Use the program  `calculate_angle.py` to compute the angle θ (i.e., rz) based on the given coordinates.
+
 Update the following values in `main.py`:
 
 ```python
