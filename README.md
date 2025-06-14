@@ -106,7 +106,13 @@ a. **Convert Latitude & Longitude**
 
 - If needed, use the  `dms_to_decimal.py` program to convert DMS to decimal degrees automatically.
 
-b. **Calculate the Heading Angle (Rotation)**
+b. **Translate the local Co-Ordinate to GPS (Initial Pose)**
+
+- Use main.py along with the known initial GPS values (latitude and longitude) to translate the local initial point (0, 0) into geographic coordinates (x1, y1).
+- This defines the GPS position corresponding to the origin of your local coordinate system.
+- Use the Tier IV Vector Map Builder to manually determine the drift error by identifying the offset at the endpoint (x4, y4).
+  
+c. **Calculate the Heading Angle (Rotation)**
 
 - Find the angle between the initial point and final point of the path using their lat/lon (or x/y) positions.
 - This angle is used to rotate the local map to match geographic orientation.
