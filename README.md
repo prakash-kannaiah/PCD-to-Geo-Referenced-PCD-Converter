@@ -108,8 +108,7 @@ a. **Convert Latitude & Longitude**
 
 b. **Translate the local Co-Ordinate to GPS (Initial Pose)**
 
-- Use main.py along with the known initial GPS values (latitude and longitude) to translate the local initial point (0, 0) into geographic coordinates (x1, y1).
-- This defines the GPS position corresponding to the origin of your local coordinate system.
+- Use `main.py` along with the known initial GPS values (latitude and longitude) to translate the local initial point (0, 0) into geographic coordinates (x1, y1). This defines the GPS position corresponding to the origin of your local coordinate system.
 - Use the Tier IV Vector Map Builder to manually determine the drift error by identifying the offset at the endpoint (x4, y4).
   
 c. **Calculate the Heading Angle (Rotation)**
