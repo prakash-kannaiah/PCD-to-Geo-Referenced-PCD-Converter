@@ -34,10 +34,10 @@ def calculate_angle(x1, y1, x2, y2, x3, y3, x4, y4):
     return theta_deg
 
 # Example input
-x1, y1 = 1, 2
-x2, y2 = 4, 6
-x3, y3 = 1, 2
-x4, y4 = 1, 0
+x1, y1 = 0, 0
+x2, y2 = 0, 0
+x3, y3 = 0, 0
+x4, y4 = 0, 0
 
 angle = calculate_angle(x1, y1, x2, y2, x3, y3, x4, y4)
 print(f"Angle between vectors: {angle:.2f} degrees")
