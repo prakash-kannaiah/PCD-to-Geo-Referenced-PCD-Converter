@@ -2,12 +2,12 @@ import open3d as o3d
 import numpy as np
 
 # Initialize GPS and heading parameters
-tx = 42055.5884  # latitude
-ty = 41385.663   # longitude
+tx = 0  # latitude
+ty = 0   # longitude
 tz = 0           # altitude
 
 # Define rotation angle (Z-axis), in radians
-rz = -121.7
+rz = 0
 theta = np.radians(rz)
 
 # Load the PCD file
