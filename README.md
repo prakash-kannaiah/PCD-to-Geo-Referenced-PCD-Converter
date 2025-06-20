@@ -13,7 +13,7 @@ It does not require GNSS/IMU integration — only a .pcd file and basic GPS info
 
 ## 🧭 How It Works
 
-1. Rotation: Rotates the point cloud around the Z-axis based on the heading angle.
+1. Rotation: Rotates the point cloud around the Z-axis based on the drifted angle.
 2. Translation: Translates the rotated point cloud to the given GPS start location.
 
 ---
